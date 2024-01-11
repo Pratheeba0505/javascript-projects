@@ -15,7 +15,7 @@ let x = 3.14;
 console.log(typeof message1);
 console.log(typeof m);
 console.log(typeof x);
-// Calculate a space mission below
+// Calculate a space mission below 
 let shuttleName = 'Determination';
 let shuttleSpeedMph = 17500;
 let distanceToMarsKm = 225000000;
