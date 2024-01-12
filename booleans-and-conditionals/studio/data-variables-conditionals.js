@@ -5,7 +5,12 @@ let fuelLevel = 7000;
 let engineTemperature = 1500;
 let engineIndicatorLight;
 let totalmass = 850000; 
-let weatherstatus = 80 
+let weatherstatus = 80;
+let date = 'Monday 2024-01-11'
+let time = '10:05:34 AM'
+
+console.log ('Date :' + date);
+console.log ('Time :' +time);
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 if (astronauts > 7) {
     console.log("total number of astronauts > 7");
@@ -16,7 +21,7 @@ if (astronauts > 7) {
   }
 
   // add logic below to verify all astronauts are ready
-  if (astronauts > 8  && fuelLevel ===8000 && engineTemperature === 2000 ) {
+  if (astronauts < 8  && fuelLevel > 5000 && engineTemperature < 2000 ) {
     console.log("astronauts are ready ");
   } 
    else {
