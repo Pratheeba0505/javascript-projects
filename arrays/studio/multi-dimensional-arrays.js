@@ -29,19 +29,19 @@ console.log(ar3.sort());
 cargoHold = ar0.concat(ar1).concat(ar2).concat(ar3);
 console.log(cargoHold);
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
-//cargoHold.splice (1,15);
-//console.log(cargoHold);
 
 
-cargoHold.slice(2,1);
+
+cargoHold.slice(0,3);
 console.log(cargoHold);
 //let result = text.slice(3, 8);
+
 //4) Use bracket notation and a template literal to display the contents of the selected cabinet. If the user entered an invalid number, print an error message.
-//cargoHold.splice(0,5);
-//console.log(cargoHold);
+let num = 3;
+if(num %3 === 0 && num < 3 ) {
+    console.log( `" print an error message"`);
+}else{ 
+    console.log(`"not  print an error message"`);
+}   
 
 //5) Modify the code to query the user for BOTH a cabinet in cargoHold AND a particular item. Use the 'includes' method to check if the cabinet contains the selected item, then print “Cabinet ____ DOES/DOES NOT contain ____.”
-cargoHold.includes("cabinet contain selected item");
-console.log(cargoHold.includes);
-cargoHold.includes("cabinet does not contain selected item");
-console.log(cargoHold.includes());
