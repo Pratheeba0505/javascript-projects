@@ -45,8 +45,8 @@ function runProgram() {
   /// Change the final input variable (aka numMeals) here to ensure your solution makes the right number of meals ///
   /// We've started with the number 2 for now. Does your solution still work if you change this value? ///
   
-  // let meals = mealAssembly(protein, grains, veggies, beverages, desserts, 2);
-  // console.log(meals)
+   let meals = mealAssembly(protein, grains, veggies, beverages, desserts, 2);
+   console.log(meals)
   
 
   /// TEST PART B HERE ///

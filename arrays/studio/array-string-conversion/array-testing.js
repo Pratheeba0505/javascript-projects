@@ -5,6 +5,12 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
+let phrase = "Chili Cook-off";
+
+for (let i = 0; i < phrase.length - 1; i = i + 3) {
+   console.log(phrase[i]);
+}
+
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.

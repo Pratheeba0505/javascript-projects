@@ -3,3 +3,7 @@
 for (let i = 0; i < 51; i++) {
    console.log(i);
  }
+
+ for (let i = 55; i > 51; i--) {
+    console.log(i);
+  }
