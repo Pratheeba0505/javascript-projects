@@ -5,27 +5,22 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
-let phrase = "Chili Cook-off";
 
-for (let i = 0; i < phrase.length - 1; i = i + 3) {
-   console.log(phrase[i]);
-}
-
-//2) 
+ 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check = protoArray1 ; 
-	//if protoArray1.includes
+	let check = strings;
+ 
+console.log(check);
+console.log
+	let output;	    	  				
+	 //TODO: 2. write the code required for this step
 
-
-
-		let output;  				
-			//TODO: 2. write the code required for this step
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
 }
-
+reverseCommas()
 //3)
 function semiDash() {
 	let check; 

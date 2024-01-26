@@ -1,4 +1,14 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
+// test
+let str1 = 'apple';
+let str2 ='LC101' ;
+let str3 = 'Capitalised Letters';
+let str4 = 'I Love the smell of code in the morning';
+
+let num1 =1234;
+let num2 = 8675309;
+
+
 
 // Part One: Reverse Characters
 
@@ -11,6 +21,19 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+ function reverseCharacters(element){
+    
+     let returnelement;
+      returnelement = element.split().reverse().join('');
+      //returnelement = element.reverse().join('');
+      return returnelement
+ }
+
+  console.log(reverseCharacters(str1));
+ console.log(reverseCharacters(str2));
+ console.log(reverseCharacters(str3));
+ console.log(reverseCharacters(str4));
+
 
 // Part Two: Reverse Digits
 
@@ -19,6 +42,22 @@
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
+function reverseCharacters1(str){ 
+let testinff= str
+     if ( testinff === '1234')
+     
+                    return testinff.split('').reverse().join('');
+                
+                
+     if( testinff === 'asdf')
+     
+     return testinff.split('').reverse().join('');
+           }
+    
+  
+console.log( reverseCharacters1('1234'));
+console.log( reverseCharacters1('asdf'));
+
 
 // Part Three: Complete Reversal
 
@@ -31,7 +70,41 @@
 
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
-let arrayTest3 = ['hello', 'world', 123, 'orange'];
+let arrayTest3 = ['hello', 'world', 123, 'orange']; 
+
+function reverseArray(arrayTest1){ 
+
+   let reversed = ''
+   {for (let i = 0;i < arrayTest1.length;i++) 
+    reversed = arrayTest1[i] + reversed;
+    }
+return reversed
+}
+
+let test = reverseArray(arrayTest2)
+console.log(test)
+
+// function reverse(str) {
+//     let reversed = '';
+ 
+//     for (let i = 0; i < str.length; i++) {
+//     reversed = str[i] + reversed;
+    
+//     }
+ 
+
+//  function reverseArray(str1){
+//      let reverseArray = [];
+//     for (let i = 0;i < str1.length ;i--){
+//          reverseArray.push(reverseCharacters(arr[i]));
+
+//      }
+//             return reverseArray
+
+//   }
+ console.log(reverseArray(arrayTest1));
+ console.log(reverseArray(arrayTest2));
+ console.log(reverseArray(arrayTest3));
 
 // Bonus Missions
 
@@ -45,6 +118,21 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 // 1. Outside of the function, define the variable str and initialize it with a string (e.g. 'Functions rock!').
 // 2. Call your function and print the returned phrase.
 
+let testStr1 = " Functions rock! ";
+let testStr2 = " LC ";
+function getSillyPhrase(str){
+    let snippet;
+    if(str.length <= 3){
+        snippet = str[str.length - 1];
+    }else{
+        snippet = str.slice(0, 4);
+        
+    }
+    return `we put the '${snippet}' in '${str}'`;
+}
+console.log(getSillyPhrase(testStr1));
+console.log(getSillyPhrase(testStr2));
+
 // Area of rectangle equal to length x width
 
 // 1. Define a function with the required parameters to calculate the area of a rectangle.
@@ -52,3 +140,23 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 // 3. Call your area function by passing in two arguments - the length and width.
 // 4. If only one argument is passed to the function, then the shape is a square. Modify your code to deal with this case.
 // 5. Use a template literal to print, “The area is ____ cm^2.”
+
+// function findarea(length,width){
+    
+//     return  length * width; 
+// }
+// console.log(`The area is ${findarea(2,4)} cm^2.'`);
+// console.log(`The area is ${findarea(14,7)} cm^2.`);
+// console.log(`The area is ${findarea(20)} cm^2.`);
+
+
+function findarea(length,width){
+  if (width === undefined) {
+    width= 1;}
+    return  length * width; 
+    
+ 
+}
+console.log(`The area is ${findarea(2,4)} cm^2.'`);
+console.log(`The area is ${findarea(14,7)} cm^2.`);
+console.log(`The area is ${findarea(20)} cm^2.`);
