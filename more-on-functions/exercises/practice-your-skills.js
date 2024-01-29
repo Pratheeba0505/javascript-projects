@@ -12,4 +12,20 @@ b) Replace any strings with “ARRR!”
 c) Print the new array to confirm your work.
 */
 
-let arr = ['Elocution', 21, 'Clean teeth', 100];
+//let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let string1 = function (a){
+    //let a = numb;
+ 
+    if (typeof a === 'number') {
+              //console.log( "Input is a number" + (a *3)}
+              console.log( "Input is a number " + (a *3))}
+            else {
+              console.log("ARRR!");
+            };
+          
+        };
+
+
+string1(71)
+string1('ere')

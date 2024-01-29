@@ -24,8 +24,12 @@ let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
-/* Steal some fuel from the shuttle:
- * /
+
+
+
+
+// Steal some fuel from the shuttle:
+ 
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
 
@@ -34,6 +38,19 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //c). Once you figure out how much fuel to pump out, return that value.
 
 //d). Decide where to best place your function call to gather our new fuel.
+
+let nonSuspiciousFunction = function(a) {
+  if (checkFuel(a) === 'green') {
+     return a - 100001;
+  }
+  else if (checkFuel(a) === 'yellow') {
+     return a - 50001;
+  }
+  else {
+     return a;
+  }
+};
+console.log(nonSuspiciousFunction(5001));
 
 /* Next, liberate some of that glorious cargo.
  * /
@@ -55,3 +72,8 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
 
+*/
+let irs = function(levelOfFuel, itemsInCargo) {
+  let arr = deckMops(itemsInCargo);
+  return `Raided ${nonSuspiciousFunction(fuelLevel)} kg of fuel from the tanks, and stole ${arr[0]} and ${arr[1]} from the cargo hold.`
+}
