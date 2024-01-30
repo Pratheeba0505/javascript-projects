@@ -24,15 +24,17 @@ function sortNums(arr) {
   let sortedArray =[];
   while(arr.length > 0 ){
     let min = findMinValue(arr);
-      //push in to new array
+      //push  to new array
     sortedArray.push(min);
       //remove from old array
     
     arr.splice(arr.indexof(min), 1);
     //arr.splice(arr.indexof(min),0);
   }
-  return sortedArray;
+  return sortedArray
 }
+
+
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
@@ -44,5 +46,5 @@ let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
 
 console.log(sortNums(nums1));
-// console.log(sortNums(nums2));
-// console.log(sortNums(nums3));
+console.log(sortNums(nums2));
+console.log(sortNums(nums3));

@@ -38,16 +38,29 @@ nums3.sort(function(a,b){
   return b - a ;
 
 });
-console.log("After sorting in Descending order of num2 " + nums3);
+console.log("After sorting in Descending order of num3 " + nums3);
+nums1.sort(function(a,b){
+  return b-a ;
+});
+console.log("After sorting in Descending order of num1"  + nums1);
+
+//bonus Mission
+console.log("Bonus Mission -recursive sort");
+//recursive  veresion of sortnums()
+
+function sortNumsRec(arr,sorted = []) {
+    //base case, return final sorted array
+    if (arr.length > 0){
+        return sorted;
+    }
+}
+let min = function findMin(arr){
+sorted.push(min);
+arr.splice( arr.indexof(min,1));
+return sortnNec(arr,sorted);
+}
+console.log(sortNumsRec(nums1));
+console.log(sortNumsRec(nums2));
+console.log(sortNumsRec(nums3));
 
 
-// nums2.sort(function(a,b) {
-//     return a-b;
-
-// });
-// console.log(nums2);
-// nums3.sort(function(a,b){
-//   return b - a ;
-
-// });
-// console.log(nums3);
