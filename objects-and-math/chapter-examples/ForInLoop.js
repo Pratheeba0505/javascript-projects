@@ -7,3 +7,13 @@ let tortoiseOne = {
 };
 
 // Using a for..in loop, iterate through each property in the tortoiseOne object and print the value to the console.
+
+for(item in tortoiseOne){
+   console.log(item + " , " + tortoiseOne[item]);
+}
+ // let num = Math.floor(Math.random()*10);
+
+//console.log(num);
+//let num = Math.round(Math.random()*10);
+
+   //console.log(num);
