@@ -1,5 +1,6 @@
-
 //Import modules:
+
+console.log('asdfds');
 const input = require('readline-sync');  //Import readline-sync.
 const averages = require("./ScoreCalcs/averages") //Import functions from averages.js.
 const printAll = require('./display');  //Import function from display.js.
@@ -7,8 +8,6 @@ const randomSelect = require('./randomSelect')//Import function from randomSelec
 
 //Candidate data:
 let astronauts = ['Fox','Turtle','Cat','Hippo','Dog'];
-
-let tests = ['node','sssss'];
 
 const testTitles = ['Math','Fitness','Coding','Nav','Communication'];
 

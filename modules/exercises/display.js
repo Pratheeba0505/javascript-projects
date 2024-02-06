@@ -1,5 +1,6 @@
 //TODO: Export ONLY the printAll function.
 
+
 function printAll(names, tests, scores){
   let header = 'Name';
   let row = '';
@@ -34,3 +35,11 @@ function printTestScores(index,test,students,scores){
   }
   return;
 }
+
+
+//TODO: Export all functions within an object.
+ module.exports = {
+   printAll: printAll
+ };
+
+module.exports = printAll;
