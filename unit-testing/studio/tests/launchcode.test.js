@@ -6,16 +6,16 @@ describe("Testing launchcode", function(){
    // Write your unit tests here!
   
   test("should have the property called  organization" , function() {
-    expect(launchcode.organization).toEqual("nonprofit");
+    expect(launchcode.organization).toBe("nonprofit");
  });
 
 
  test("should have the property called executiveDirector " , function() {
-  expect(launchcode.organization).toEqual("Jeff");
+  expect(launchcode.executiveDirector ).toBe("Jeff");
 }); 
 
 test("should have the property called percentageCoolEmployees " , function() {
-  expect(launchcode.organization).toEqual(100);
+  expect(launchcode.percentageCoolEmployees).toBe(100);
 }); 
 
 test("should have the property called programsOffered " , function() {

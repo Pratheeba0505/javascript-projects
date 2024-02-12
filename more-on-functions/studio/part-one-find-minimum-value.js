@@ -21,3 +21,7 @@ function findMin(arr){
     console.log(findMin(nums1));
     console.log(findMin(nums2));
     console.log(findMin(nums3));
+
+     
+
+
