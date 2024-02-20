@@ -42,9 +42,9 @@ status(){
 }
 // 1b.object for candidate:
 
-let bubba = new CrewCandidate('Bubba Bear', 135, [88, 85, 90]);
-let merry = new CrewCandidate('Merry Maltese ',1.5, [93, 88, 97] );
-let glad = new CrewCandidate('Glad Gator', 225, [75, 78, 62]);
+let bubba  =  new CrewCandidate('Bubba Bear', 135, [88, 85, 90]);
+let merry  =  new CrewCandidate('Merry Maltese ',1.5, [93, 88, 97] );
+let glad =  new CrewCandidate('Glad Gator', 225, [75, 78, 62]);
 
 // 1c.assign key/value pair(console):
 
