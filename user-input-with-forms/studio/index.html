@@ -3,8 +3,55 @@
 <head>
 	<meta charset="utf-8">
 	<script>
+
+let action ={
+	google: 'https://www.google.com/search',
+	duckDuckGo: 'https://duckduckgo.com/',
+	bing: 'https://www.bing.com/search',
+	ask: 'https://www.ask.com/web'
+
+
+}
+
+		function setSearchEngine(){
+			const buttonSelected = document.querySelector('input[name=engine]:checked');
+			const form = document.getElementById("searchForm");
+                let url = actions[buttonSelected.value];
+				form.action = url;
+		}
+		//add validation (bonus mission part  1)window alert
+if (query,value.trim() === ''){
+	alert("you didn't enter anything to search ");
+	event.preventDefault();
+}else if(!buttonselected){
+	alert("which search engine do you want to use?");
+	event.preventDefault();
+}
+
+
+
+//use error box with page text:
+const errorBox = document.getElementById('error box');
+const errormsg = document.getElementById('error msg');
+
+if (query,value.trim() === ''){
+	alert("you didn't enter anything to search ");
+	event.preventDefault();
+}else if(!buttonselected){
+	alert("which search engine do you want to use?");
+	event.preventDefault();
+}
+
+		let url = actions[buttonSelected.value];
+		form.action = url; 
+
+
 		// TODO: create a handler
     window.addEventListener("load", function(){
+
+		const form = document.getElementById("searchForm");
+		form.addEventListener("submit",setSearchEngine);
+
         // TODO: register the handler
     });
 	</script>
@@ -14,6 +61,14 @@
 
 	<form id="searchForm">
     <!-- TODO: add form elements -->
+	<form id="searchForm">
+		<input type="text" id="q" name="q"/>
+		<label><input type="radio" name="engin" value="google"/>Google</label>
+		<label><input type="radio" name="engin" value="duckDuckGo"/>DuskDuckGo</lable>
+		<label><input type="radio" name="engin" value="bing"/>Bing</label>
+		<label><input type="radio" name="engin" value="ask"/>Ask</label>
+		<button id="submit" value="Go!">Go!</button>
+
 	</form>
 
 </body>
